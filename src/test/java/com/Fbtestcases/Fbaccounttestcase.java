@@ -10,14 +10,18 @@ public class Fbaccounttestcase extends Fbselectlist {
 	
 	public static void fbaccountcreation () {
 		
-		//Testcaseobjects poj=PageFactory.initElements(driver, Testcaseobjects.class);
 		
 		Fbcommonobjects poj= PageFactory.initElements(driver, Fbcommonobjects.class);
+		poj.createaccount.click();
 		poj.Firstname.sendKeys("kuruba");
 		poj.Sirname.sendKeys("chandra");
+		poj.Mobileno.sendKeys("123456789");
+		poj.Newpassword.sendKeys("Change4me");
+	   fbdropdown();
+	   poj.Male.click();
+	   poj.Signup.click();
+	   
 	
-		
-		
 		
 	
 		
